@@ -1,13 +1,6 @@
-//
-//  ZippiService.m
-//  Zippie
-//
-//  Created by Manh Nguyen on 6/23/15.
-//  Copyright (c) 2015 Lunex. All rights reserved.
-//
 
-#import "ZippiService.h"
-#import "ZPUtil.h"
+#import "iOSService.h"
+#import "Util.h"
 
 static inline NSString * ZippiContentTypeForPathExtension(NSString *extension) {
 #ifdef __UTTYPE__
@@ -23,7 +16,7 @@ static inline NSString * ZippiContentTypeForPathExtension(NSString *extension) {
 #endif
 }
 
-@implementation ZippiService
+@implementation iOSService
 
 + (AFHTTPRequestOperationManager *)uploadOperationManager{
     static AFHTTPRequestOperationManager *_share = nil;

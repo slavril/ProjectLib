@@ -1,10 +1,3 @@
-//
-//  NSString+Custom.m
-//  Zippie
-//
-//  Created by Manh Nguyen on 5/13/14.
-//  Copyright (c) 2014 Lunex Telecom. All rights reserved.
-//
 
 #import "NSString+Ext.h"
 

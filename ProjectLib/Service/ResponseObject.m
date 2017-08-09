@@ -1,10 +1,3 @@
-//
-//  ResponseObject.m
-//  Zippie
-//
-//  Created by Manh Nguyen on 3/16/14.
-//  Copyright (c) 2014 Lunex Telecom. All rights reserved.
-//
 
 #import "ResponseObject.h"
 #import "BaseService.h"

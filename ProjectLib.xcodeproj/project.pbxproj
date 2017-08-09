@@ -13,7 +13,7 @@
 		FDF455931F3AAB2A00916B5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF455911F3AAB2A00916B5D /* Main.storyboard */; };
 		FDF455951F3AAB2A00916B5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF455941F3AAB2A00916B5D /* Assets.xcassets */; };
 		FDF455981F3AAB2A00916B5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF455961F3AAB2A00916B5D /* LaunchScreen.storyboard */; };
-		FDF455A21F3AAB9E00916B5D /* ZippiService.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF455A11F3AAB9E00916B5D /* ZippiService.m */; };
+		FDF455A21F3AAB9E00916B5D /* iOSService.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF455A11F3AAB9E00916B5D /* iOSService.m */; };
 		FDF455DA1F3AAC1E00916B5D /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF455A51F3AAC1E00916B5D /* AFHTTPRequestOperation.m */; };
 		FDF455DB1F3AAC1E00916B5D /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF455A71F3AAC1E00916B5D /* AFHTTPRequestOperationManager.m */; };
 		FDF455DC1F3AAC1E00916B5D /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF455A91F3AAC1E00916B5D /* AFHTTPSessionManager.m */; };
@@ -41,7 +41,7 @@
 		FDF455F41F3AAC4B00916B5D /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF455F21F3AAC4B00916B5D /* BaseService.m */; };
 		FDF455F71F3AADC800916B5D /* ResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF455F61F3AADC800916B5D /* ResponseObject.m */; };
 		FDF455FA1F3AB03800916B5D /* NSString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF455F91F3AB03800916B5D /* NSString+Ext.m */; };
-		FDF455FD1F3AB30500916B5D /* ZPUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF455FB1F3AB30500916B5D /* ZPUtil.m */; };
+		FDF455FD1F3AB30500916B5D /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF455FB1F3AB30500916B5D /* Util.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,8 +55,8 @@
 		FDF455941F3AAB2A00916B5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDF455971F3AAB2A00916B5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDF455991F3AAB2A00916B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDF455A01F3AAB9E00916B5D /* ZippiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZippiService.h; sourceTree = "<group>"; };
-		FDF455A11F3AAB9E00916B5D /* ZippiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZippiService.m; sourceTree = "<group>"; };
+		FDF455A01F3AAB9E00916B5D /* iOSService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSService.h; sourceTree = "<group>"; };
+		FDF455A11F3AAB9E00916B5D /* iOSService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = iOSService.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		FDF455A41F3AAC1E00916B5D /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		FDF455A51F3AAC1E00916B5D /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		FDF455A61F3AAC1E00916B5D /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 		FDF455F61F3AADC800916B5D /* ResponseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseObject.m; sourceTree = "<group>"; };
 		FDF455F81F3AB03800916B5D /* NSString+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Ext.h"; sourceTree = "<group>"; };
 		FDF455F91F3AB03800916B5D /* NSString+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Ext.m"; sourceTree = "<group>"; };
-		FDF455FB1F3AB30500916B5D /* ZPUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPUtil.m; sourceTree = "<group>"; };
-		FDF455FC1F3AB30500916B5D /* ZPUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPUtil.h; sourceTree = "<group>"; };
+		FDF455FB1F3AB30500916B5D /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		FDF455FC1F3AB30500916B5D /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +148,8 @@
 		FDF455871F3AAB2A00916B5D /* ProjectLib */ = {
 			isa = PBXGroup;
 			children = (
-				FDF455FB1F3AB30500916B5D /* ZPUtil.m */,
-				FDF455FC1F3AB30500916B5D /* ZPUtil.h */,
+				FDF455FB1F3AB30500916B5D /* Util.m */,
+				FDF455FC1F3AB30500916B5D /* Util.h */,
 				FDF455F81F3AB03800916B5D /* NSString+Ext.h */,
 				FDF455F91F3AB03800916B5D /* NSString+Ext.m */,
 				FDF4559F1F3AAB9E00916B5D /* Service */,
@@ -185,8 +185,8 @@
 				FDF455CE1F3AAC1E00916B5D /* AFNetworking-AutoRetry */,
 				FDF455D81F3AAC1E00916B5D /* AFHTTPRequestOperation+Ext.h */,
 				FDF455D91F3AAC1E00916B5D /* AFHTTPRequestOperation+Ext.m */,
-				FDF455A01F3AAB9E00916B5D /* ZippiService.h */,
-				FDF455A11F3AAB9E00916B5D /* ZippiService.m */,
+				FDF455A01F3AAB9E00916B5D /* iOSService.h */,
+				FDF455A11F3AAB9E00916B5D /* iOSService.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -353,11 +353,11 @@
 				FDF455DF1F3AAC1E00916B5D /* AFURLConnectionOperation.m in Sources */,
 				FDF455EA1F3AAC1E00916B5D /* UIProgressView+AFNetworking.m in Sources */,
 				FDF455EE1F3AAC1E00916B5D /* AFHTTPSessionManager+AutoRetry.m in Sources */,
-				FDF455FD1F3AB30500916B5D /* ZPUtil.m in Sources */,
+				FDF455FD1F3AB30500916B5D /* Util.m in Sources */,
 				FDF455E31F3AAC1E00916B5D /* AFAutoPurgingImageCache.m in Sources */,
 				FDF455DA1F3AAC1E00916B5D /* AFHTTPRequestOperation.m in Sources */,
 				FDF455F71F3AADC800916B5D /* ResponseObject.m in Sources */,
-				FDF455A21F3AAB9E00916B5D /* ZippiService.m in Sources */,
+				FDF455A21F3AAB9E00916B5D /* iOSService.m in Sources */,
 				FDF455E81F3AAC1E00916B5D /* UIButton+AFNetworking.m in Sources */,
 				FDF455E91F3AAC1E00916B5D /* UIImageView+AFNetworking.m in Sources */,
 				FDF455E01F3AAC1E00916B5D /* AFURLRequestSerialization.m in Sources */,

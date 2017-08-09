@@ -1,18 +1,9 @@
-//
-//  ZippiService.h
-//  Zippie
-//
-//  Created by Manh Nguyen on 6/23/15.
-//  Copyright (c) 2015 Lunex. All rights reserved.
-//
 
 #import "BaseService.h"
 #import "AFHTTPRequestOperation+Ext.h"
 #import "AFHTTPSessionManager.h"
 
-@class MessageModel;
-
-@interface ZippiService : BaseService
+@interface iOSService : BaseService
 
 + (AFHTTPRequestOperationManager *)uploadOperationManager;
 
@@ -20,7 +11,6 @@
 + (NSInteger)uploadOperationCount;
 + (void)cancelAllOperationsWithUploadId:(NSString *)uploadId;
 + (AFHTTPRequestOperation *)uploadOperationContentInfoWithMessageId:(NSString *)messageId;
-+ (AFHTTPRequestOperation *)uploadOperationContentInfoWithMessageModel:(MessageModel *)message;
 
 #pragma mark - Upload
 

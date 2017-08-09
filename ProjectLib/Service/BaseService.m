@@ -1,13 +1,7 @@
-//
-//  BaseService.m
-//  FileThis
-//
-//  Created by Manh Nguyen on 10/14/14.
-//  Copyright (c) 2014 Lunex Telecom. All rights reserved.
-//
+
 #import "BaseService.h"
 #import "NSString+Ext.h"
-#import "ZPUtil.h"
+#import "Util.h"
 
 #define kEnableServiceLogs 1
 #define kBaseServiceHeaderPageEnable 1
