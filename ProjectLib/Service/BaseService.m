@@ -10,19 +10,19 @@
 
 static const NSInteger kDefaultCacheMaxCacheAge = 60; // 60s
 
-#pragma mark - VodiAutoPurgeCache
+#pragma mark - AutoPurgeCache
 
-@interface VodiAutoPurgeCache : NSCache
+@interface AutoPurgeCache : NSCache
 
 @end
 
-@implementation VodiAutoPurgeCache
+@implementation AutoPurgeCache
 
-+ (VodiAutoPurgeCache *)shared{
-    static VodiAutoPurgeCache *cache = nil;
++ (AutoPurgeCache *)shared{
+    static AutoPurgeCache *cache = nil;
     static dispatch_once_t onceToken = 0;
     dispatch_once(&onceToken, ^{
-        cache = [[VodiAutoPurgeCache alloc] init];
+        cache = [[AutoPurgeCache alloc] init];
         cache.name = @"com.vodi.base.service.memory.cache";
         cache.totalCostLimit = 6 * 1024 * 1024; // 6MB
     });
@@ -72,11 +72,11 @@ static const NSInteger kDefaultCacheMaxCacheAge = 60; // 60s
 
 - (id)cacheObjectForKey:(id)key {
     @try {
-        ExpiringCacheItem *object = [[VodiAutoPurgeCache shared] objectForKey:key];
+        ExpiringCacheItem *object = [[AutoPurgeCache shared] objectForKey:key];
         if (object) {
             NSTimeInterval timeSinceCache = fabs((object.expiringCacheItemDate).timeIntervalSinceNow);
             if (timeSinceCache > self.expiryTimeInterval) {
-                [[VodiAutoPurgeCache shared] removeObjectForKey:key];
+                [[AutoPurgeCache shared] removeObjectForKey:key];
                 return nil;
             }
         }
@@ -91,7 +91,7 @@ static const NSInteger kDefaultCacheMaxCacheAge = 60; // 60s
 - (void)setCacheObject:(ExpiringCacheItem *)obj forKey:(id)key {
     if (obj && key) {
         obj.expiringCacheItemDate = [NSDate date];
-        [[VodiAutoPurgeCache shared] setObject:obj forKey:key];
+        [[AutoPurgeCache shared] setObject:obj forKey:key];
     }
 }
 
@@ -264,11 +264,11 @@ static NSMutableDictionary *_BasicHTTPHeaders = nil;
 }
 
 + (ResponseObject *)responseObjectCacheForKey:(NSString *)key expireTimeInterval:(NSTimeInterval)expireTimeInterval {
-    ExpiringCacheItem *cacheObject = [[VodiAutoPurgeCache shared] objectForKey:key];
+    ExpiringCacheItem *cacheObject = [[AutoPurgeCache shared] objectForKey:key];
     if (cacheObject) {
         NSTimeInterval timeSinceCache = fabs((cacheObject.expiringCacheItemDate).timeIntervalSinceNow);
         if (timeSinceCache > expireTimeInterval) {
-            [[VodiAutoPurgeCache shared] removeObjectForKey:key];
+            [[AutoPurgeCache shared] removeObjectForKey:key];
             return nil;
         }
         
@@ -287,11 +287,11 @@ static NSMutableDictionary *_BasicHTTPHeaders = nil;
     item.object = responseObject.object;
     item.statusCode = responseObject.statusCode;
     item.expiringCacheItemDate = [NSDate date];
-    [[VodiAutoPurgeCache shared] setObject:item forKey:key];
+    [[AutoPurgeCache shared] setObject:item forKey:key];
 }
 
 + (void)clearAllCacheResponses{
-    [[VodiAutoPurgeCache shared] removeAllObjects];
+    [[AutoPurgeCache shared] removeAllObjects];
 }
 
 #pragma mark -
@@ -428,8 +428,8 @@ static NSMutableDictionary *_HTTPAdditionalHeaders = nil;
 }
 
 + (void)clearCacheResponsesForKey:(NSString *)requestKey {
-    if ([[VodiAutoPurgeCache shared] objectForKey:requestKey]) {
-        [[VodiAutoPurgeCache shared] removeObjectForKey:requestKey];
+    if ([[AutoPurgeCache shared] objectForKey:requestKey]) {
+        [[AutoPurgeCache shared] removeObjectForKey:requestKey];
     }
 }
 

@@ -14,8 +14,6 @@
 #define NO_NETWORK                      1000#define ID_ERR_SYSTEM                       -1
 #define ID_ERR_CONNECT_TO_SERVER            -10000
 #define ID_ERR_UNKNOWN                      -10001
-#define ID_ERR_ACC_NOT_EXIST                121001
-#define ID_ERR_ACC_EXIST                    121004
 #define kDefaultMaximumRetryCount 2
 #define kDefaultUrlRequestTimeoutInterval 90
 #define kDownloadRequestTimeout 180
