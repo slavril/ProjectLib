@@ -43,6 +43,7 @@
 
 + (NSString *)getTextBtw:(NSString *)text lBound:(NSString *)lBound rBound:(NSString *)rBound;
 - (NSString *)removeEmoji;
++ (NSString *)wrap;
 
 #pragma mark - func in C for improve performance
 

@@ -522,5 +522,12 @@
     return str;
 }
 
+- (NSString *)wrap {
+    if (self != nil) {
+        return self;
+    }
+    return @"";
+}
+
 @end
 
