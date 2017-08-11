@@ -736,7 +736,7 @@ static NSMutableDictionary *_HTTPAdditionalHeaders = nil;
         }
     }
     
-    checkSumUrl = [checkSumUrl add:@"private-key"];
+    checkSumUrl = [checkSumUrl append:@"private-key"];
     checkSumMd5 = [checkSumUrl md5];
     getParamUrl = [getParamUrl stringByAppendingFormat:@"&check_sum=%@&public_key=%@", checkSumMd5,@"public-key"];
     

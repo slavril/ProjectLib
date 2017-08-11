@@ -38,12 +38,12 @@
     return [UIColor greenColor];
 }
 
-+ (UIColor *)colorWithRedInt:(int)red greenInt:(int)green blueInt:(int)blue {
++ (UIColor *)colorWithR:(int)red G:(int)green B:(int)blue {
     return [UIColor colorWithRed:(float)red/255.0 green:(float)green/255.0 blue:(float)blue/255.0 alpha:1.0];
 }
 
 // Assumes input like "#00FF00" (#RRGGBB).
-+ (UIColor *)colorFromHexString:(NSString *)hexString {
++ (UIColor *)colorWithHexString:(NSString *)hexString {
     unsigned rgbValue = 0;
     NSScanner *scanner = [NSScanner scannerWithString:hexString];
     scanner.scanLocation = 1; // bypass '#' character
@@ -51,7 +51,7 @@
     return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
 }
 
-+ (UIColor *)getContrastBlackWhiteWithColor:(UIColor *)color {
++ (UIColor *)colorContrastBlackWhiteWithColor:(UIColor *)color {
     CGFloat r=0,g=0,b=0,a=0;
     
     if ([color respondsToSelector:@selector(getRed:green:blue:alpha:)]) {
@@ -69,6 +69,10 @@
 
     double colorValue = 1 - ((0.299 * [rgbaArray[0] doubleValue]) + (0.587 * [rgbaArray[1] doubleValue]) + (0.114 * [rgbaArray[2] doubleValue]));
     return colorValue < 0.5 ? [[self class] blackColor] : [[self class] whiteColor];
+}
+
++ (UIColor *)colorWithHexa:(long)hex {
+    return [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16))/255.0 green:((float)((hex & 0xFF00) >> 8))/255.0 blue:((float)(hex & 0xFF))/255.0 alpha:1.0];
 }
 
 @end
