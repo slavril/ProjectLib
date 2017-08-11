@@ -8,7 +8,6 @@
 + (UIColor *)colorFromString:(NSString *)string;
 + (UIColor *)colorWithRedInt:(int)red greenInt:(int)green blueInt:(int)blue;
 + (UIColor *)colorFromHexString:(NSString *)hexString;
-
 + (UIColor *)getContrastBlackWhiteWithColor:(UIColor *)color;
 
 @end

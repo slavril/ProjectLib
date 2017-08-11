@@ -108,6 +108,21 @@ void dp_performBlockOnMainThreadAndWait(dispatch_block_t block, BOOL waitUntilDo
 
 @end
 
-@implementation ZPUtil
+@implementation Util
+
+
++ (NSString *)generateUUID{
+    NSString *result = nil;
+    CFUUIDRef uuid = CFUUIDCreate(NULL);
+    if (uuid){
+        result = (__bridge_transfer NSString *)CFUUIDCreateString(NULL, uuid);
+        CFRelease(uuid);
+    }
+    return result;
+}
+
+- (NSString *)generateUUID{
+    return [[self class] generateUUID];
+}
 
 @end

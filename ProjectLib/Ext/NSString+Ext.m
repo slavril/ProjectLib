@@ -59,7 +59,7 @@
     return output;
 }
 
-- (BOOL)containsString:(NSString *)string {
+- (BOOL)contain:(NSString *)string {
     if (![string isKindOfClass:[NSString class]]) {
         return NO;
     }
@@ -74,7 +74,7 @@
     return YES;
 }
 
-- (NSString *)escapeString {
+- (NSString *)escape {
     NSString *retVal = self;
     if (retVal)
     {
@@ -88,7 +88,7 @@
     return retVal;
 }
 
-- (NSString *)unEscapeString {
+- (NSString *)unEscape {
     NSString *retVal = self;
     if (retVal)
     {
@@ -109,61 +109,17 @@
     return @"";
 }
 
-- (NSString *)add:(NSString *)string {
+- (NSString *)append:(NSString *)string {
     return [self stringByAppendingString:[[self class] wrapString:string]];
 }
 
-- (NSString *)addToAbove:(NSString *)string {
-    return [string stringByAppendingString:self];
-}
-
-- (NSString *)trimSpace {
+- (NSString *)trim {
     NSString *result = [[self class] wrapString:self];
     return [result stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
-- (NSString *)trimPlus {
-    NSString *result = [self trimSpace];
-    if ([result rangeOfString:@"+"].location == 0) {
-        result = [result substringFromIndex:1];
-    }
-    return result;
-}
-
-- (NSString *)trimZero {
-    NSString *result = [self trimSpace];
-    if ([result rangeOfString:@"0"].location == 0) {
-        result = [result substringFromIndex:1];
-    }
-    return result;
-}
-
-- (NSString *)trimPlusOrZero {
-    NSString *result = [self trimSpace];
-    if ([result rangeOfString:@"+"].location == 0 || [result rangeOfString:@"0"].location == 0) {
-        result = [result substringFromIndex:1];
-    }
-    return result;
-}
-
-- (NSString *)trimPlusOrZeroAndSpace {
-    return [[self removeSpace] trimPlusOrZero];
-}
-
 - (NSString *)trimNewLine {
     return [[self componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]] componentsJoinedByString:@""];
-}
-
-- (NSString*)trimNewLineAndSpace {
-    return [[self trimSpace] trimNewLine];
-}
-
-- (NSString *)trimDecimalDigit {
-    return [[self componentsSeparatedByCharactersInSet:[NSCharacterSet decimalDigitCharacterSet].invertedSet] componentsJoinedByString:@""];
-}
-
-- (NSString *)addPlus {
-    return [[self trimPlus] addToAbove:@"+"];
 }
 
 - (CGSize)sizeOfFont:(UIFont *)font {
@@ -180,48 +136,6 @@
 
 - (NSString*)filterNonNumericCharacter {
     return [[self componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"+0123456789"].invertedSet] componentsJoinedByString:@""];
-}
-
-- (NSString *)removeSpecialKeyChar {
-    NSString *str = [self removeSpace];
-    BOOL hasPlusPrefix = NO;
-    if ([str hasPrefix:@"+"]) {
-        hasPlusPrefix = YES;
-    }
-    NSString *result = [[self componentsSeparatedByCharactersInSet:[NSCharacterSet decimalDigitCharacterSet].invertedSet] componentsJoinedByString:@""];
-    if (hasPlusPrefix) {
-        result = [result addPlus];
-    }
-    result = [result stringByReplacingOccurrencesOfString:@"-" withString:@""];
-    result = [result stringByReplacingOccurrencesOfString:@"(" withString:@""];
-    result = [result stringByReplacingOccurrencesOfString:@")" withString:@""];
-    result = [result stringByReplacingOccurrencesOfString:@"*" withString:@""];
-    result = [result stringByReplacingOccurrencesOfString:@"#" withString:@""];
-    
-    if ([result rangeOfString:@"00"].location == 0 ||
-        [result rangeOfString:@"+00"].location == 0 ||
-        [result rangeOfString:@"+0"].location == 0 ||
-        [result rangeOfString:@"011"].location == 0 ) {
-        
-        BOOL hasPlus = ([result hasPrefix:@"+"]
-                        || [result rangeOfString:@"00"].location == 0
-                        || [result rangeOfString:@"011"].location == 0);
-        BOOL hasZeroOneOne = [result hasPrefix:@"011"];
-        if (hasPlus) {
-            result = [result trimPlus];
-        }
-        NSRange range = [result rangeOfString:(hasZeroOneOne)?@"011":@"^0*" options:NSRegularExpressionSearch];
-        result = [result stringByReplacingCharactersInRange:range withString:@""];
-        if (hasPlus) {
-            result = [result addPlus];
-        }
-    }
-    return result;
-}
-
-- (NSString *)cleanPhone {
-    NSString *result = [self removeSpecialKeyChar];
-    return [result trimPlusOrZero];
 }
 
 - (NSString *)removeString:(NSString *)string {
@@ -304,20 +218,6 @@
 - (NSString *)extractNumber {
     NSCharacterSet *nonDigitCharacterSet = [NSCharacterSet decimalDigitCharacterSet].invertedSet;
     return [[self componentsSeparatedByCharactersInSet:nonDigitCharacterSet] componentsJoinedByString:@""];
-}
-
-+ (NSString *)generateUUID{
-    NSString *result = nil;
-    CFUUIDRef uuid = CFUUIDCreate(NULL);
-    if (uuid){
-        result = (__bridge_transfer NSString *)CFUUIDCreateString(NULL, uuid);
-        CFRelease(uuid);
-    }
-    return result;
-}
-
-- (NSString *)generateUUID{
-    return [[self class] generateUUID];
 }
 
 + (NSString *)getTextBtw:(NSString *)text lBound:(NSString *)lBound rBound:(NSString *)rBound {

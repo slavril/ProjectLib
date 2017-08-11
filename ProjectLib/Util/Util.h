@@ -35,6 +35,9 @@ extern void dp_performBlockOnMainThreadAndWait(dispatch_block_t block, BOOL wait
 
 @end
 
-@interface ZPUtil : NSObject
+@interface Util : NSObject
+
++ (NSString *)generateUUID;
+- (NSString *)generateUUID;
 
 @end

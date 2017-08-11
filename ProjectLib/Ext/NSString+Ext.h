@@ -9,25 +9,18 @@
 - (NSString *)md5;
 - (NSString *)sha1;
 - (NSString *)urlEncode;
-- (BOOL)containsString:(NSString *)string;
-- (NSString *)escapeString;
-- (NSString *)unEscapeString;
-- (NSString *)add:(NSString *)string;
-- (NSString *)addToAbove:(NSString *)string;
-- (NSString *)trimSpace;
-- (NSString *)trimPlus;
-- (NSString *)trimZero;
-- (NSString *)trimPlusOrZero;
-- (NSString *)trimPlusOrZeroAndSpace;
+
+- (BOOL)contain:(NSString *)string;
+- (NSString *)escape;
+- (NSString *)unEscape;
+- (NSString *)append:(NSString *)string;
+- (NSString *)trim;
 - (NSString *)trimNewLine;
-- (NSString*)trimNewLineAndSpace;
-- (NSString *)trimDecimalDigit;
-- (NSString *)addPlus;
+
 - (CGSize)sizeOfFont:(UIFont *)font;
 - (NSString *)removeSpace;
-- (NSString*)filterNonNumericCharacter;
-- (NSString *)removeSpecialKeyChar;
-- (NSString *)cleanPhone;
+- (NSString *)filterNonNumericCharacter;
+
 - (NSString *)removeString:(NSString *)string;
 - (NSString *)escapeStringParameterUrl;
 - (NSData *)dataFromHexString;
@@ -37,8 +30,6 @@
 - (NSString *)extractNumber;
 - (BOOL)containsString:(NSString *)string andOption:(NSStringCompareOptions)mask;
 
-+ (NSString *)generateUUID;
-- (NSString *)generateUUID;
 + (NSString *)timeFormatConvertToSeconds:(NSNumber *)secs;
 
 + (NSString *)getTextBtw:(NSString *)text lBound:(NSString *)lBound rBound:(NSString *)rBound;
