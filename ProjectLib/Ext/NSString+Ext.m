@@ -435,5 +435,12 @@
     return mString;
 }
 
+- (BOOL)isNil {
+    if (!self.length) {
+        return YES;
+    }
+    return NO;
+}
+
 @end
 

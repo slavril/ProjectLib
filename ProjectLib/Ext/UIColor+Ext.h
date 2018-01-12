@@ -12,7 +12,6 @@
 
 @end
 
-
 @interface NSString(UIColorARIS)
 
 + (NSString *)stringFromColor:(UIColor *)color;
