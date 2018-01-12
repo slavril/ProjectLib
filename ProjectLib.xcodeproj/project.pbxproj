@@ -52,6 +52,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FDE3563A2008A7A200CD5C3C /* AllInOneLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllInOneLibrary.h; sourceTree = "<group>"; };
 		FDF455851F3AAB2A00916B5D /* ProjectLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF455891F3AAB2A00916B5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FDF4558B1F3AAB2A00916B5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -169,6 +170,7 @@
 		FDF455871F3AAB2A00916B5D /* ProjectLib */ = {
 			isa = PBXGroup;
 			children = (
+				FDE3563A2008A7A200CD5C3C /* AllInOneLibrary.h */,
 				FDF456101F3AC65E00916B5D /* Ext */,
 				FDF456151F3AC65E00916B5D /* Util */,
 				FDF4559F1F3AAB9E00916B5D /* Service */,
@@ -590,6 +592,7 @@
 				FDF4559E1F3AAB2A00916B5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

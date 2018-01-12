@@ -35,6 +35,7 @@
 + (NSString *)getTextBtw:(NSString *)text lBound:(NSString *)lBound rBound:(NSString *)rBound;
 - (NSString *)removeEmoji;
 + (NSString *)wrap;
+- (NSString *)insertAtIndex:(NSInteger)index;
 
 #pragma mark - func in C for improve performance
 

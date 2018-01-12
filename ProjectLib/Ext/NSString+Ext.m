@@ -429,5 +429,11 @@
     return @"";
 }
 
+- (NSString *)insertAtIndex:(NSInteger)index {
+    NSMutableString *mString = [self mutableCopy];
+    [mString insertAtIndex:index];
+    return mString;
+}
+
 @end
 
