@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FDBE1440200F2E3C0020B841 /* NSMutableAttributeString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE143F200F2E3C0020B841 /* NSMutableAttributeString+Ext.m */; };
 		FDF4558A1F3AAB2A00916B5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF455891F3AAB2A00916B5D /* main.m */; };
 		FDF4558D1F3AAB2A00916B5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF4558C1F3AAB2A00916B5D /* AppDelegate.m */; };
 		FDF455901F3AAB2A00916B5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF4558F1F3AAB2A00916B5D /* ViewController.m */; };
@@ -52,6 +53,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FDBE143E200F2E3C0020B841 /* NSMutableAttributeString+Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributeString+Ext.h"; sourceTree = "<group>"; };
+		FDBE143F200F2E3C0020B841 /* NSMutableAttributeString+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributeString+Ext.m"; sourceTree = "<group>"; };
 		FDE3563A2008A7A200CD5C3C /* AllInOneLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllInOneLibrary.h; sourceTree = "<group>"; };
 		FDF455851F3AAB2A00916B5D /* ProjectLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF455891F3AAB2A00916B5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -308,6 +311,8 @@
 				FDF456121F3AC65E00916B5D /* AFHTTPRequestOperation+Ext.m */,
 				FDF456131F3AC65E00916B5D /* NSString+Ext.h */,
 				FDF456141F3AC65E00916B5D /* NSString+Ext.m */,
+				FDBE143E200F2E3C0020B841 /* NSMutableAttributeString+Ext.h */,
+				FDBE143F200F2E3C0020B841 /* NSMutableAttributeString+Ext.m */,
 			);
 			path = Ext;
 			sourceTree = "<group>";
@@ -406,6 +411,7 @@
 				FDF455E51F3AAC1E00916B5D /* AFNetworkActivityIndicatorManager.m in Sources */,
 				FDF455DB1F3AAC1E00916B5D /* AFHTTPRequestOperationManager.m in Sources */,
 				FDF455DF1F3AAC1E00916B5D /* AFURLConnectionOperation.m in Sources */,
+				FDBE1440200F2E3C0020B841 /* NSMutableAttributeString+Ext.m in Sources */,
 				FDF455EA1F3AAC1E00916B5D /* UIProgressView+AFNetworking.m in Sources */,
 				FDF455EE1F3AAC1E00916B5D /* AFHTTPSessionManager+AutoRetry.m in Sources */,
 				FDF455E31F3AAC1E00916B5D /* AFAutoPurgingImageCache.m in Sources */,
