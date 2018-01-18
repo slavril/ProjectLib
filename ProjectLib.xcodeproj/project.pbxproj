@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FDBE1440200F2E3C0020B841 /* NSMutableAttributeString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE143F200F2E3C0020B841 /* NSMutableAttributeString+Ext.m */; };
+		FDBE1443201048E00020B841 /* UIView+Font.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE1441201048DE0020B841 /* UIView+Font.m */; };
 		FDF4558A1F3AAB2A00916B5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF455891F3AAB2A00916B5D /* main.m */; };
 		FDF4558D1F3AAB2A00916B5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF4558C1F3AAB2A00916B5D /* AppDelegate.m */; };
 		FDF455901F3AAB2A00916B5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF4558F1F3AAB2A00916B5D /* ViewController.m */; };
@@ -55,6 +56,9 @@
 /* Begin PBXFileReference section */
 		FDBE143E200F2E3C0020B841 /* NSMutableAttributeString+Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributeString+Ext.h"; sourceTree = "<group>"; };
 		FDBE143F200F2E3C0020B841 /* NSMutableAttributeString+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributeString+Ext.m"; sourceTree = "<group>"; };
+		FDBE1441201048DE0020B841 /* UIView+Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Font.m"; sourceTree = "<group>"; };
+		FDBE1442201048DF0020B841 /* UIView+Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Font.h"; sourceTree = "<group>"; };
+		FDBE144420104A170020B841 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		FDE3563A2008A7A200CD5C3C /* AllInOneLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllInOneLibrary.h; sourceTree = "<group>"; };
 		FDF455851F3AAB2A00916B5D /* ProjectLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF455891F3AAB2A00916B5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 		FDF455871F3AAB2A00916B5D /* ProjectLib */ = {
 			isa = PBXGroup;
 			children = (
+				FDBE144420104A170020B841 /* Constants.h */,
 				FDE3563A2008A7A200CD5C3C /* AllInOneLibrary.h */,
 				FDF456101F3AC65E00916B5D /* Ext */,
 				FDF456151F3AC65E00916B5D /* Util */,
@@ -295,6 +300,8 @@
 		FDF456101F3AC65E00916B5D /* Ext */ = {
 			isa = PBXGroup;
 			children = (
+				FDBE1442201048DF0020B841 /* UIView+Font.h */,
+				FDBE1441201048DE0020B841 /* UIView+Font.m */,
 				FDF4562E1F3D5E6900916B5D /* NSMutableArray+Stack.h */,
 				FDF4562D1F3D5E6900916B5D /* NSMutableArray+Stack.m */,
 				FDF4562A1F3D5DBB00916B5D /* UIView+Ext.h */,
@@ -438,6 +445,7 @@
 				FDF456281F3C4D1100916B5D /* UIView+ExtLayout.m in Sources */,
 				FDF455E21F3AAC1E00916B5D /* AFURLSessionManager.m in Sources */,
 				FDF4558A1F3AAB2A00916B5D /* main.m in Sources */,
+				FDBE1443201048E00020B841 /* UIView+Font.m in Sources */,
 				FDF4562C1F3D5DBB00916B5D /* UIView+Ext.m in Sources */,
 				FDF4561A1F3AC65E00916B5D /* Util.m in Sources */,
 			);

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AllInOneLibrary.h"
 
 @interface ViewController : UIViewController
 
