@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		FDBE1440200F2E3C0020B841 /* NSMutableAttributeString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE143F200F2E3C0020B841 /* NSMutableAttributeString+Ext.m */; };
 		FDBE1443201048E00020B841 /* UIView+Font.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE1441201048DE0020B841 /* UIView+Font.m */; };
+		FDBE14492011C7B60020B841 /* UIScrollView+ExtLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE14482011C7B60020B841 /* UIScrollView+ExtLayout.m */; };
+		FDBE14572011DF8B0020B841 /* NSData+Split.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE14512011DF890020B841 /* NSData+Split.m */; };
+		FDBE14582011DF8B0020B841 /* NSNotification+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE14542011DF8A0020B841 /* NSNotification+Ext.m */; };
+		FDBE14592011DF8B0020B841 /* NSNotificationCenter+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE14562011DF8B0020B841 /* NSNotificationCenter+Ext.m */; };
+		FDBE1463201200390020B841 /* BaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE145E201200390020B841 /* BaseScrollViewController.m */; };
+		FDBE1464201200390020B841 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE1460201200390020B841 /* BaseView.m */; };
+		FDBE1465201200390020B841 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE1462201200390020B841 /* BaseViewController.m */; };
+		FDBE1468201201340020B841 /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE1467201201340020B841 /* DataCenter.m */; };
 		FDF4558A1F3AAB2A00916B5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF455891F3AAB2A00916B5D /* main.m */; };
 		FDF4558D1F3AAB2A00916B5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF4558C1F3AAB2A00916B5D /* AppDelegate.m */; };
 		FDF455901F3AAB2A00916B5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF4558F1F3AAB2A00916B5D /* ViewController.m */; };
@@ -59,6 +67,23 @@
 		FDBE1441201048DE0020B841 /* UIView+Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Font.m"; sourceTree = "<group>"; };
 		FDBE1442201048DF0020B841 /* UIView+Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Font.h"; sourceTree = "<group>"; };
 		FDBE144420104A170020B841 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		FDBE14472011C7B60020B841 /* UIScrollView+ExtLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ExtLayout.h"; sourceTree = "<group>"; };
+		FDBE14482011C7B60020B841 /* UIScrollView+ExtLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ExtLayout.m"; sourceTree = "<group>"; };
+		FDBE14512011DF890020B841 /* NSData+Split.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Split.m"; sourceTree = "<group>"; };
+		FDBE14522011DF8A0020B841 /* NSData+Split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Split.h"; sourceTree = "<group>"; };
+		FDBE14532011DF8A0020B841 /* NSNotification+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotification+Ext.h"; sourceTree = "<group>"; };
+		FDBE14542011DF8A0020B841 /* NSNotification+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotification+Ext.m"; sourceTree = "<group>"; };
+		FDBE14552011DF8B0020B841 /* NSNotificationCenter+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Ext.h"; sourceTree = "<group>"; };
+		FDBE14562011DF8B0020B841 /* NSNotificationCenter+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+Ext.m"; sourceTree = "<group>"; };
+		FDBE145A2011DFEC0020B841 /* NSNotificationCenterEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSNotificationCenterEnum.h; sourceTree = "<group>"; };
+		FDBE145D201200390020B841 /* BaseScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseScrollViewController.h; sourceTree = "<group>"; };
+		FDBE145E201200390020B841 /* BaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseScrollViewController.m; sourceTree = "<group>"; };
+		FDBE145F201200390020B841 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		FDBE1460201200390020B841 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		FDBE1461201200390020B841 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		FDBE1462201200390020B841 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		FDBE1466201201340020B841 /* DataCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
+		FDBE1467201201340020B841 /* DataCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
 		FDE3563A2008A7A200CD5C3C /* AllInOneLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllInOneLibrary.h; sourceTree = "<group>"; };
 		FDF455851F3AAB2A00916B5D /* ProjectLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF455891F3AAB2A00916B5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -158,6 +183,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FDBE145C201200390020B841 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDBE145D201200390020B841 /* BaseScrollViewController.h */,
+				FDBE145E201200390020B841 /* BaseScrollViewController.m */,
+				FDBE145F201200390020B841 /* BaseView.h */,
+				FDBE1460201200390020B841 /* BaseView.m */,
+				FDBE1461201200390020B841 /* BaseViewController.h */,
+				FDBE1462201200390020B841 /* BaseViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FDF4557C1F3AAB2A00916B5D = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +217,7 @@
 			children = (
 				FDBE144420104A170020B841 /* Constants.h */,
 				FDE3563A2008A7A200CD5C3C /* AllInOneLibrary.h */,
+				FDBE145C201200390020B841 /* View */,
 				FDF456101F3AC65E00916B5D /* Ext */,
 				FDF456151F3AC65E00916B5D /* Util */,
 				FDF4559F1F3AAB9E00916B5D /* Service */,
@@ -300,6 +339,13 @@
 		FDF456101F3AC65E00916B5D /* Ext */ = {
 			isa = PBXGroup;
 			children = (
+				FDBE14522011DF8A0020B841 /* NSData+Split.h */,
+				FDBE14512011DF890020B841 /* NSData+Split.m */,
+				FDBE14532011DF8A0020B841 /* NSNotification+Ext.h */,
+				FDBE14542011DF8A0020B841 /* NSNotification+Ext.m */,
+				FDBE145A2011DFEC0020B841 /* NSNotificationCenterEnum.h */,
+				FDBE14552011DF8B0020B841 /* NSNotificationCenter+Ext.h */,
+				FDBE14562011DF8B0020B841 /* NSNotificationCenter+Ext.m */,
 				FDBE1442201048DF0020B841 /* UIView+Font.h */,
 				FDBE1441201048DE0020B841 /* UIView+Font.m */,
 				FDF4562E1F3D5E6900916B5D /* NSMutableArray+Stack.h */,
@@ -320,6 +366,8 @@
 				FDF456141F3AC65E00916B5D /* NSString+Ext.m */,
 				FDBE143E200F2E3C0020B841 /* NSMutableAttributeString+Ext.h */,
 				FDBE143F200F2E3C0020B841 /* NSMutableAttributeString+Ext.m */,
+				FDBE14472011C7B60020B841 /* UIScrollView+ExtLayout.h */,
+				FDBE14482011C7B60020B841 /* UIScrollView+ExtLayout.m */,
 			);
 			path = Ext;
 			sourceTree = "<group>";
@@ -331,6 +379,8 @@
 				FDF4561C1F3C45D500916B5D /* DateUtils.m */,
 				FDF456161F3AC65E00916B5D /* Util.h */,
 				FDF456171F3AC65E00916B5D /* Util.m */,
+				FDBE1466201201340020B841 /* DataCenter.h */,
+				FDBE1467201201340020B841 /* DataCenter.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -411,6 +461,7 @@
 				FDF455901F3AAB2A00916B5D /* ViewController.m in Sources */,
 				FDF455EF1F3AAC1E00916B5D /* NSObject+AssociatedDictionary.m in Sources */,
 				FDF456181F3AC65E00916B5D /* AFHTTPRequestOperation+Ext.m in Sources */,
+				FDBE1468201201340020B841 /* DataCenter.m in Sources */,
 				FDF455DE1F3AAC1E00916B5D /* AFSecurityPolicy.m in Sources */,
 				FDF455E41F3AAC1E00916B5D /* AFImageDownloader.m in Sources */,
 				FDF4558D1F3AAB2A00916B5D /* AppDelegate.m in Sources */,
@@ -425,10 +476,15 @@
 				FDF455DA1F3AAC1E00916B5D /* AFHTTPRequestOperation.m in Sources */,
 				FDF4562F1F3D5E6900916B5D /* NSMutableArray+Stack.m in Sources */,
 				FDF456291F3C4D1100916B5D /* NSLayoutConstraint+Ext.m in Sources */,
+				FDBE14592011DF8B0020B841 /* NSNotificationCenter+Ext.m in Sources */,
+				FDBE14582011DF8B0020B841 /* NSNotification+Ext.m in Sources */,
 				FDF456201F3C45DE00916B5D /* NSDate+Ext.m in Sources */,
 				FDF455F71F3AADC800916B5D /* ResponseObject.m in Sources */,
 				FDF455A21F3AAB9E00916B5D /* iOSService.m in Sources */,
+				FDBE14492011C7B60020B841 /* UIScrollView+ExtLayout.m in Sources */,
 				FDF4561D1F3C45D500916B5D /* DateUtils.m in Sources */,
+				FDBE1465201200390020B841 /* BaseViewController.m in Sources */,
+				FDBE14572011DF8B0020B841 /* NSData+Split.m in Sources */,
 				FDF455E81F3AAC1E00916B5D /* UIButton+AFNetworking.m in Sources */,
 				FDF455E91F3AAC1E00916B5D /* UIImageView+AFNetworking.m in Sources */,
 				FDF455E01F3AAC1E00916B5D /* AFURLRequestSerialization.m in Sources */,
@@ -442,9 +498,11 @@
 				FDF455F01F3AAC1E00916B5D /* ObjcAssociatedObjectHelpers.m in Sources */,
 				FDF455EB1F3AAC1E00916B5D /* UIRefreshControl+AFNetworking.m in Sources */,
 				FDF455E11F3AAC1E00916B5D /* AFURLResponseSerialization.m in Sources */,
+				FDBE1464201200390020B841 /* BaseView.m in Sources */,
 				FDF456281F3C4D1100916B5D /* UIView+ExtLayout.m in Sources */,
 				FDF455E21F3AAC1E00916B5D /* AFURLSessionManager.m in Sources */,
 				FDF4558A1F3AAB2A00916B5D /* main.m in Sources */,
+				FDBE1463201200390020B841 /* BaseScrollViewController.m in Sources */,
 				FDBE1443201048E00020B841 /* UIView+Font.m in Sources */,
 				FDF4562C1F3D5DBB00916B5D /* UIView+Ext.m in Sources */,
 				FDF4561A1F3AC65E00916B5D /* Util.m in Sources */,
